@@ -27,15 +27,15 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
-            /*if (!audioSource.isPlaying)
+            if (!audioSource.isPlaying)
             {
                 audioSource.Play();    
-            }*/
+            }
         }
-        /*else
+        else
         {
             audioSource.Stop();
-        }*/
+        }
     }
     
     void ProcessRotation()
